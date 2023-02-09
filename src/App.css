@@ -10,7 +10,7 @@
 header {
   height: 140px;
   width: 100%;
-  background-color:#e69b00;
+  background-color: #efc134;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,15 +19,34 @@ header {
 }
 
 header nav {
-  margin-right: 200px;
+ margin-right: 200px;
+  width: 1100px;
 }
 nav .link {
   padding: 9px;
-padding: 12px;
-transition: 0.5s linear;
+  padding: 12px;
+  transition: 0.5s linear;
   background-color: rgb(182, 182, 0);
   border-radius: 15px;
 }
+
+.sachirodropdown {
+  padding: 9px;
+  padding: 12px;
+  transition: 0.5s linear;
+  background-color: rgb(182, 182, 0);
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+.sachirodropdown:hover{
+
+  background-color: rgb(88, 96, 0);
+
+  box-shadow: 0 0 0 6px rgb(242, 255, 55);
+
+}
+
 
 nav .link:hover {
   background-color: rgb(88, 96, 0);
@@ -36,9 +55,9 @@ nav .link:hover {
 }
 
 .logo {
-  width: 70px;
-  height: 70px;
-  background-image: url(../src/photo/291691191_1381251165694875_7883840101609995478_n.jpg);
+  width: 100px;
+  height: 100px;
+  background-image: url(../src/photo/logo.png);
   background-repeat: no-repeat;
   background-size: 100%;
   text-indent: -55555px;
@@ -46,11 +65,9 @@ nav .link:hover {
   border-radius: 50%;
 }
 
-
-
 .mainnav {
   display: flex;
-  width: 960px;
+  width: 1200px;
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -59,106 +76,437 @@ nav .link:hover {
 }
 
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdowncontent{
+
+  width: 320px;
+  height: 200px;
+  /* border: 1px solid green; */
+  margin-top: 150px;
+  /* margin-left: -10px; */
+ 
+}
+
+.drop1{
+  padding: 9px;
+  padding: 12px;
+  transition: 0.5s linear;
+  background-color: rgb(182, 182, 0);
+  border-radius: 15px;
+  margin-top: 10px;
+
+}
+.drop2{
+
+  padding: 9px;
+  padding: 12px;
+  transition: 0.5s linear;
+  background-color: rgb(182, 182, 0);
+  border-radius: 15px;
+  position: absolute;
+  margin-left: -258px;
+  margin-top: 50px;
+}
+/* .dropdowncontent{
+display: none;
+position: absolute;
+background-color: rgb(0, 133, 88);
+min-width: 160px;
+z-index: 1;
+} */
+/* 
+.dropdown:hover .dropdowncontent{
+  display: block;
+  background-color: rgb(161, 89, 0);
+} */
+
 /* aviakoncetxt */
 
-
-.aviah2{
-  margin-top: 20px;
-  margin-left: 150px;
+.aviah2 {
+  margin-top: 50px;
+  margin-left: 100px;
   font-size: 24px;
 }
 
-.flexavia{
+.flexavia {
   display: flex;
-  justify-content: space-evenly;
- 
+  justify-content: space-around;
+  padding: 20px;
   flex-wrap: wrap;
   margin-top: 50px;
 
   /* padding: 20px; */
 }
 
-
-.aviakontect{
+.aviakontect {
   width: 350px;
-  height: 350px;
-background-color: #ffb82a;
-text-align: center;
-/* padding: 0 0 20px 0; */
-margin-bottom: 50px;
+  height: 202px;
+  /* background-color: #ffb82a; */
+  text-align: center;
+  /* padding: 0 0 20px 0; */
+  margin-bottom: 50px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-
-.aviapoto1{
+.aviapoto1 {
   width: 350px;
   height: 280px;
-  background-image: url(../src/photo/example.jpg);
+  background-image: url(../src/photo/avia1.png);
   background-repeat: no-repeat;
   background-size: 100%;
-
 }
 
-.fbgroup{
+.aviapoto2 {
+  width: 350px;
+  height: 280px;
+  background-image: url(../src/photo/avia2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.aviapoto3 {
+  width: 350px;
+  height: 280px;
+  background-image: url(../src/photo/avia3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.aviapoto4 {
+  width: 350px;
+  height: 280px;
+  background-image: url(../src/photo/avia4.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.aviapoto5 {
+  width: 350px;
+  height: 280px;
+  background-image: url(../src/photo/avia5.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.aviapoto6 {
+  width: 350px;
+  height: 280px;
+  background-image: url(../src/photo/avia6.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.aviapoto7 {
+  width: 350px;
+  height: 280px;
+  background-image: url(../src/photo/avia7.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.aviapoto8 {
+  width: 350px;
+  height: 280px;
+  background-image: url(../src/photo/avia8.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.aviapoto9 {
+  width: 350px;
+  height: 280px;
+  background-image: url(../src/photo/avia9.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.aviapoto10 {
+  width: 350px;
+  height: 280px;
+  background-image: url(../src/photo/avia10.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.aviapoto11 {
+  width: 350px;
+  height: 280px;
+  background-image: url(../src/photo/avia11.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.aviapoto12 {
+  width: 350px;
+  height: 280px;
+  background-image: url(../src/photo/avia12.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.fbgroup {
   margin-left: 100px;
-  font-size: 18px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.fbgroup:hover{
+background-color: #9b7730;
+width: 456px;
+border-radius: 6px;
 }
 
-.ratomChven{
-font-size: 22px;
-margin-left: 100px;
-margin-top: 40px;
-
+.ratomChven {
+  font-size: 22px;
+  margin-left: 100px;
+  margin-top: 40px;
 }
 
-.ratomChvenn{
+.ratomChvenn {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 40px;
 }
 
-.ratomChvenstyle{
+.ratomChvenstyle {
   width: 250px;
-  height: 230px;
+  height: 270px;
 
   text-align: center;
   margin-bottom: 30px;
 }
-.ratomChvenstyle div{
-width: 250px;
-height: 206px;
-background-image: url(../src/photo/example.jpg);
-background-repeat: no-repeat;
-background-size: 100%;
-border-radius: 15px;
+.ratomChvenstyle .ratomchven1 {
+  width: 250px;
+  height: 258px;
+  background-image: url(../src/photo/yes.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
-.ratomChvenstyle p{
+.ratomChvenstyle .ratomchven2 {
+  width: 250px;
+  height: 258px;
+  background-image: url(../src/photo/proc.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
 
-padding: 6px;
-background-color: #d0cc64;
-border-radius: 12px;
+.ratomChvenstyle .ratomchven3 {
+  width: 250px;
+  height: 258px;
+  background-image: url(../src/photo/30000.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.ratomChvenstyle p {
+  padding: 6px;
+  background-color: #d0cc64;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.nomer {
+  width: 240px;
+  height: auto;
+  background-color: #faca6c;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  border-radius: 12px;
+}
+
+.nomer p:hover {
+  background-color: #e69b00;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px rgb(242, 255, 55);
+}
+
+/* dazgveva -----------------------------------------------------------------------*/
+
+.dazgveva {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+.dazgveva .foto {
+  width: 400px;
+  height: 400px;
+  border-radius: 12px 8px;
+  background-image: url(../src/photo/dazgveva.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.dazgvevaTeqsti{
+
+width: 50%;
+
+}
+.dazgvevaTeqsti p{
+  margin: 5px;
+}
+
+.dazgveva :nth-child(1){
+font-size: 24px;
 
 }
 
-.nomer{
-width: 240px;
-height: auto;
-background-color: #faca6c;
-text-align: center;
-padding: 20px;
-margin-bottom: 50px;
-margin-left: 100px;
-border-radius: 12px;
-}
-
-.nomer p:hover{
-background-color: #e69b00;
-border-radius: 6px;
-cursor: pointer;
+.dazgveva2 span{
+color: black;
 
 }
+.dazgveva3{
 
+  font-style: oblique;
+
+}
+.dazgveva5 span{
+color: rgb(0, 0, 0);
+
+}
+.dazgvevaNomer {
+  width: 200px;
+  height: 42px;
+  background-color: #d0cc64;
+  text-align: center;
+  margin-left: 60px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px;
+  border-radius: 12px;
+
+}
+.dazgvevaNomer p {
+  padding: 6px;
+  background-color: #9b7730;
+  border-radius: 12px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.dazgvevaTeqsti a{
+  font-size: 22px;
+}
+/* sastumrooooooooooooooooooooooooooo */
+
+
+.sastumro {
+  display: flex;
+  width: 1300px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px auto;
+
+}
+
+.sastumro div {
+  width: 400px;
+  height: 400px;
+  border-radius: 30px;
+  background-image: url(../src/photo/auzi.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.sastumro p{
+width: 38%;
+}
+
+.sastumro span{
+  
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.sastumro .spani{
+  font-size: 22px;
+
+text-align: justify;
+}
+.sastumroNomer {
+  width: 200px;
+  height: 42px;
+  background-color: #d0cc64;
+  text-align: center;
+  margin-left: 60px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px;
+  border-radius: 12px;
+}
+
+.sastumroNomer p {
+  padding: 6px;
+  background-color: #9b7730;
+  border-radius: 12px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+
+.map{
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  flex-wrap: wrap;
+}
+
+.maping{
+
+  width: 500px;
+  height: 400px;
+}
+
+
+
+/* shetavazeba--------------------------------------------------- */
+
+.shetavazeba{
+
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: auto;
+}
+/* .shetavazeba p{
+
+
+} */
+.shetavazeba div{
+
+  width: 390px;
+  height: 390px;
+  background-image: url(../src/photo/shetavazeba.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+
+/* xshirad dasmuli kitxvebi */
+.kitxvebi{
+  width: 90%;
+  /* text-align: center; */
+  margin: 10px auto;
+}
+.kitxvebi p{
+  text-indent: 30px;
+}
+
+
+
+
+.compolitic{
+width: 90%;
+margin: 10px auto;
+
+}
 /* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

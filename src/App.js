@@ -1,3 +1,4 @@
+
 import { Link, Route, Routes } from "react-router-dom";
 import "./App.css";
 
@@ -6,12 +7,17 @@ import Pageshome from "./pages/Pageshome";
 import Shetavazeba from "./pages/Shetavazeba";
 import Sastumro from "./pages/Sastumro";
 import Dazgveva from "./pages/Dazgveva";
-import Sachiroinfo from "./pages/Sachiroinfo";
+import Faq from "./pages/Faq";
+
+
 import Contact from "./pages/Contact";
+import Comfpolit from "./pages/Comfpolit";
 function App() {
   return (
     <>
-      {/* header------------------------------------------------------------ */}
+
+
+    
       <header>
         <h1 className="logo">matare</h1>
         <nav>
@@ -37,11 +43,18 @@ function App() {
               </Link>
             </li>
             <li>
-              <Link className="link" to="sachiroinfo">
-                საჭირო ინფორმაცია
-              </Link>
+           <div className="dropdown">
+              <span className="sachirodropdown">საჭირო ინფორმაცია</span>
+              </div>
+              <div className="dropdowncontent">
+                
+<Link to="faq" className="drop1">ხშირად დასმული კითხვები </Link>
+<Link/>
+
+<Link to="Comfpolit" className="drop2">კომფიდენციალურობის პოლიტიკა</Link> 
+              </div>
             </li>
-            {/* aq unda davamato 2 routeri */}
+            
             <li>
               <Link className="link" to="contact">
                 კონტაქტი
@@ -56,7 +69,8 @@ function App() {
         <Route path="shetavadedzeba" element={<Shetavazeba />} />
         <Route path="sastumro" element={<Sastumro />} />
         <Route path="dazgveva" element={<Dazgveva />} />
-        <Route path="sachiroinfo" element={<Sachiroinfo />} />
+     <Route path="faq" element={<Faq/>}/>
+     <Route path="Comfpolit" element={<Comfpolit/>}/>
         <Route path="contact" element={<Contact />} />
       </Routes>
 
